@@ -1,1 +1,13 @@
-<p>link works!</p>
+<input #qty>
+<br>
+<button (click)="change(qty.value)">Change</button>
+
+<h2>Total is : {{total()}}</h2>
+<h2>Computed Total is : {{total1()}}</h2>
+
+<input #fname>
+<br>
+<input #lname>
+<br>
+<button (click)="namechange(fname.value,lname.value)">Change</button>
+<h2>Username is : {{username().firstname}} {{username().lastname}}</h2>
